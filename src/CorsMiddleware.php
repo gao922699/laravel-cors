@@ -37,6 +37,7 @@ class CorsMiddleware
      */
     public $maxAge = 86400;
 
+
     /**
      * Handle an incoming request.
      *
