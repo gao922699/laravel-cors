@@ -7,19 +7,34 @@ use Exception;
 
 class CorsMiddleware
 {
+    /**
+     * @var array Access-Control-Allow-Origin 配置，支持多个
+     */
     public $allowOrigins = [];
 
+    /**
+     * @var array Access-Control-Allow-Headers 配置
+     */
     public $allowHeaders = [
         'Content-Type',
     ];
 
+    /**
+     * @var array Access-Control-Allow-Methods配置
+     */
     public $allowMethods = [
         'POST',
         'GET',
     ];
 
+    /**
+     * @var bool Access-Control-Allow-Credentials配置，是否开启cookie跨域。为true时前端发送请求也要带上withCredentials属性
+     */
     public $allowCredentials = false;
 
+    /**
+     * @var int 复杂请求的OPTIONS请求缓存有效期，单位秒
+     */
     public $maxAge = 86400;
 
     /**
