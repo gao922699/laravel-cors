@@ -12,7 +12,7 @@
       "email": "672405020@qq.com"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "beta",
   "autoload": {
     "psr-4": {
       "gao922699\\laravel\\cors\\": "src"
