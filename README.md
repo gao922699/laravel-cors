@@ -5,7 +5,7 @@
 composer require gao922699/laravel-cros
 
 # 使用
-在app/Http/文件内容如下：
+在app/Http/Middleware文件夹中添加文件内容如下：
 <pre><code>
 namespace App\Http\Middleware;
 use gao922699\laravel\cors\CorsMiddleware;
@@ -15,7 +15,7 @@ class Cors extends CorsMiddleware
     'http://localhost/',
     'http://www.testdomain.com/',
     ];
-    public $maxAge = 100;
+    public $maxAge = 3600;
     //还有allowHeaders,allowMethods可以配置
 }
 </code></pre>
